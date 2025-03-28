@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "service_icon": "../../src/assets/react.svg",
+        "service_icon": "/assets/react.svg",
         "service_name": "3D Game Development",
         "service_tools": {
             "tool1": "Unity",
@@ -9,15 +9,15 @@
             "tool3": "Blender"
         },
         "service_tools_icons": {
-            "icon1": "@/assets/react.svg",
-            "icon2": "@/assets/react.svg",
-            "icon3": "@/assets/react.svg"
+            "icon1": "/assets/react.svg",
+            "icon2": "/assets/react.svg",
+            "icon3": "/assets/react.svg"
         },
         "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
     },
     {
         "id": 2,
-        "service_icon": "../../src/assets/react.svg",
+        "service_icon": "/assets/react.svg",
         "service_name": "3D Game Development",
         "service_tools": {
             "tool1": "Unity",
@@ -25,15 +25,15 @@
             "tool3": "Blender"
         },
         "service_tools_icons": {
-            "icon1": "@/assets/react.svg",
-            "icon2":"@/assets/react.svg",
-            "icon3": "@/assets/react.svg"
+            "icon1": "/assets/react.svg",
+            "icon2":"/assets/react.svg",
+            "icon3": "/assets/react.svg"
         },
         "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
     },
     {
         "id": 3,
-        "service_icon": "../../src/assets/react.svg",
+        "service_icon": "/assets/react.svg",
         "service_name": "3D Game Development",
         "service_tools": {
             "tool1": "Unity",
@@ -41,15 +41,15 @@
             "tool3": "Blender"
         },
         "service_tools_icons": {
-            "icon1": "../../src/assets/react.svg",
-            "icon2": "../../src/assets/react.svg",
-            "icon3": "../../src/assets/react.svg"
+            "icon1": "/assets/react.svg",
+            "icon2": "/assets/react.svg",
+            "icon3": "/assets/react.svg"
         },
         "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
     },
     {
         "id": 4,
-        "service_icon": "../../src/assets/react.svg",
+        "service_icon": "/assets/react.svg",
         "service_name": "3D Game Development",
         "service_tools": {
             "tool1": "Unity",
@@ -57,9 +57,9 @@
             "tool3": "Blender"
         },
         "service_tools_icons": {
-            "icon1": "../../src/assets/react.svg",
-            "icon2": "../../src/assets/react.svg",
-            "icon3": "../../src/assets/react.svg"
+            "icon1": "/assets/react.svg",
+            "icon2": "/assets/react.svg",
+            "icon3": "/assets/react.svg"
         },
         "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
     }  

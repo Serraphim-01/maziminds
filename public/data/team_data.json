@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "profile": "../../src/assets/react.svg",
+        "profile": "/assets/react.svg",
         "name": "John Doe",
         "role": "Game Designer",
         "links": {
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "profile": "../../src/assets/react.svg",
+        "profile": "/assets/react.svg",
         "name": "John Doe",
         "role": "Game Dev",
         "links": {
@@ -23,13 +23,13 @@
             "link2": "https://example.com/link2"
         },
         "icons": {
-            "icon1": "../../src/assets/react.svg",
-            "icon2": "../../src/assets/react.svg"
+            "icon1": "/assets/react.svg",
+            "icon2": "/assets/react.svg"
         }
     },
     {
         "id": 3,
-        "profile": "../../src/assets/react.svg",
+        "profile": "/assets/react.svg",
         "name": "John Doe",
         "role": "3d Artist",
         "links": {
@@ -37,8 +37,8 @@
             "link2": "https://example.com/link2"
         },
         "icons": {
-            "icon1": "../../src/assets/react.svg",
-            "icon2": "../../src/assets/react.svg"
+            "icon1": "/assets/react.svg",
+            "icon2": "/assets/react.svg"
         }
     }
 ]
