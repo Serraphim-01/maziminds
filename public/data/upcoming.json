@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "True Dest",
+        "description": "2D-Pixel Art - Mobile",
+        "image_url": "../../src/assets/react.svg",
+        "long_description": "This is a long description of the game."
+    }, 
+    {
+        "id": 2,
+        "title": "True Dest",
+        "description": "2D-Pixel Art - Mobile",
+        "image_url": "../../src/assets/react.svg",
+        "long_description": "This is a long description of the game."
+    }
+]

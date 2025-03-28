@@ -1,0 +1,61 @@
+.service-card {
+  width: 400px;
+  min-width: 300px;
+  background: var(--dark-cyan);
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  padding: 30px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  scale: 1.03;
+}
+
+.service-icon-container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-icon {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.service-title {
+  padding-bottom: 10px;
+}
+
+.service-tools {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.service-tool {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--transparent-gray);
+  padding: 6px 12px;
+}
+
+.service-tool img {
+  filter: brightness(0) invert(1); /* Make icons white */
+}
+
+.service-description {
+  color: var(--gray); /* Soft gray text */
+  line-height: 1.4;
+  margin-bottom: 20px;
+}

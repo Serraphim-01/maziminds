@@ -1,0 +1,76 @@
+.navbar-container {
+  background-color: var(--dark-cyan); /* Dark blue-gray background */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo-container {
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+
+.logo {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%;
+  
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar ul li {
+  font-size: 1rem;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px; 
+  transition: color 0.3s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--cyan); /* Cyan color for the underline */
+  transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: var(--cyan);
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar ul li a:not(:hover)::after {
+  width: 0;
+  right: 100%;
+}

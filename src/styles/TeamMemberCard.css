@@ -1,0 +1,46 @@
+.team-member-card {
+  width: 400px;
+  min-width: 300px;
+  background: rgba(33, 52, 64, 0.8); /* Dark gradient */
+  text-align: left;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);;
+}
+
+.team-member-image {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+.team-member-name {
+  margin-top: 10px;
+}
+
+.team-member-role {
+  text-align: center;
+  color: var(--gray);
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.team-member-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.team-icon {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 0 0 var(--cyan);
+}
+
+.team-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--cyan);
+}
