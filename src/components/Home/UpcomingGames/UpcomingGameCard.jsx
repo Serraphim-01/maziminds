@@ -1,6 +1,6 @@
 import React from "react";
 import { FaPlay } from "react-icons/fa";
-import "@/assets/styles/UpcomingGameCard.css"; // Separate CSS for styling
+import "../../../styles/UpcomingGameCard.css"; // Separate CSS for styling
 
 export default function UpcomingGameCard({ game }) {
   return (
