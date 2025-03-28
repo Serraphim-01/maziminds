@@ -1,27 +1,27 @@
 [
     {
         "id": 1,
-        "icon": "../../src/assets/react.svg",
+        "icon": "@/assets/react.svg",
         "link": "https://www.example.com"
     }, 
     {
         "id": 2,
-        "icon": "../../src/assets/react.svg",
+        "icon": "@/assets/react.svg",
         "link": "https://www.example.com"
     }, 
     {
         "id": 3,
-        "icon": "../../src/assets/react.svg",
+        "icon": "@/assets/react.svg",
         "link": "https://www.example.com"
     }, 
     {
         "id": 4,
-        "icon": "../../src/assets/react.svg",
+        "icon": "@/assets/react.svg",
         "link": "https://www.example.com"
     }, 
     {
         "id": 5,
-        "icon": "../../src/assets/react.svg",
+        "icon": "@/assets/react.svg",
         "link": "https://www.example.com"
     }
 

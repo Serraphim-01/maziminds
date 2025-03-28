@@ -9,8 +9,8 @@
             "link2": "https://example.com/link2"
         },
         "icons": {
-            "icon1": "../../src/assets/react.svg",
-            "icon2": "../../src/assets/react.svg"
+            "icon1": "@/assets/react.svg",
+            "icon2": "@/assets/react.svg"
         }
     },
     {
