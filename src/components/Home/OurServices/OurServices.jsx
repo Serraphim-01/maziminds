@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ServiceCard from "@/ServiceCard";
+import ServiceCard from "@/components/Home/OurServices/ServiceCard";
 import "@/styles/OurServices.css"; // Styling for the services section
 
 export default function OurServices() {

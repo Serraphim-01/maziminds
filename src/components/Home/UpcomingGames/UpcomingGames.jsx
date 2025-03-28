@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import UpcomingGameCard from "@/UpcomingGameCard";
+import UpcomingGameCard from "@/components/Home/UpcomingGames/UpcomingGameCard";
 import "@/styles/UpcomingGames.css";
 
 export default function UpcomingGames() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TeamMemberCard from "@/TeamMemberCard";
+import TeamMemberCard from "@/components/Home/OurTeam/TeamMemberCard";
 import "@/styles/OurTeam.css"; // Styling for the team section
 
 export default function OurTeam() {
