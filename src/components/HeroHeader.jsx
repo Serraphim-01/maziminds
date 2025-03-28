@@ -1,7 +1,7 @@
-import "./../styles/HeroHeader.css";
+import "@/styles/HeroHeader.css";
 import { useState, useEffect } from "react";
-import headerBg from "../assets/png/header-bg.webp";
-import tinyHeaderBg from "../assets/png/tiny_header-bg.webp";
+import headerBg from "@/assets/png/header-bg.webp";
+import tinyHeaderBg from "@/assets/png/tiny_header-bg.webp";
 
 const HeroHeader = () => {
   const [imageLoaded, setImageLoaded] = useState(false);

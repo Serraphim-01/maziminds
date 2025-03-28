@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Footer.css";
+import "@/styles/Footer.css";
 
 export default function Footer() {
   const [footerLinks, setFooterLinks] = useState([]);

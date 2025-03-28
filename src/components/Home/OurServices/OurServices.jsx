@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ServiceCard from "./ServiceCard";
-import "../../../styles/OurServices.css"; // Styling for the services section
+import ServiceCard from "@/ServiceCard";
+import "@/styles/OurServices.css"; // Styling for the services section
 
 export default function OurServices() {
   const [services, setServices] = useState([]);

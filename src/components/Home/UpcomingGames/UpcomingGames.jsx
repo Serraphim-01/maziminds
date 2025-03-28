@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import UpcomingGameCard from "./UpcomingGameCard";
-import "../../../styles/UpcomingGames.css";
+import UpcomingGameCard from "@/UpcomingGameCard";
+import "@/styles/UpcomingGames.css";
 
 export default function UpcomingGames() {
   const [games, setGames] = useState([]);

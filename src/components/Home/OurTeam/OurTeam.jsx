@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import TeamMemberCard from "./TeamMemberCard";
-import "../../../styles/OurTeam.css"; // Styling for the team section
+import TeamMemberCard from "@/TeamMemberCard";
+import "@/styles/OurTeam.css"; // Styling for the team section
 
 export default function OurTeam() {
   const [team, setTeam] = useState([]);

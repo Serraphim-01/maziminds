@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import HeroHeader from "../components/HeroHeader";
 import Mission from "../components/Mission";
 import { Link } from "react-router-dom";
-import "../styles/Home.css";
+import "@/styles/Home.css";
 import Projects from "../components/Home/ProjectCard/Projects";
 import UpcomingGames from "../components/Home/UpcomingGames/UpcomingGames";
 import OurServices from "../components/Home/OurServices/OurServices";  

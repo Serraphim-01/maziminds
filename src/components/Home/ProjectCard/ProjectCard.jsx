@@ -1,7 +1,7 @@
 // components/ProjectCard.jsx
 import React from "react";
 import { FaGooglePlay } from "react-icons/fa";
-import "../../../styles/ProjectCard.css";
+import "@/styles/ProjectCard.css";
 
 export default function ProjectCard({
   project,

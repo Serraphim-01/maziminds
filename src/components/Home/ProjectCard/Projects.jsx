@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ProjectCard from "./ProjectCard";
-import "../../../styles/Projects.css";
+import ProjectCard from "@/ProjectCard";
+import "@/styles/Projects.css";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Projects() {

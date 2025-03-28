@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/TeamMemberCard.css"; // Import CSS file for styling
+import "@/styles/TeamMemberCard.css"; // Import CSS file for styling
 
 export default function TeamMemberCard({ member }) {
   return (
