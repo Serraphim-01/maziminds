@@ -2,22 +2,13 @@
   padding: 50px;
 }
 
-.upcoming-games-container {
-  margin: 0 auto;
-}
-
-@media (max-width: 1000px) {
-  .upcoming-games-container.grid-mode{
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-  }
-}
-
+/* Default styling */
 .grid-mode {
   display: grid;
   gap: 20px;
   justify-content: center;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
-  max-width: 1000px; 
+  max-width: 1000px;
 }
 
 .flex-mode {
@@ -25,5 +16,46 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: max-content;
+  flex-wrap: wrap;
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1000px) {
+  .upcoming-games-section {
+    padding: 30px;
+  }
+
+  .upcoming-games-container.grid-mode {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .upcoming-games-container.flex-mode {
+    gap: 15px;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 600px) {
+  .upcoming-games-section {
+    padding: 20px;
+  }
+
+  .upcoming-games-container.grid-mode {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .upcoming-games-container.flex-mode {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .upcoming-game-card {
+    width: calc(50% - 10px);
+    font-size: 0.9rem;
+  }
 }

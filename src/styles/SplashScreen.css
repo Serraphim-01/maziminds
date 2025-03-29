@@ -1,0 +1,31 @@
+.splash-container {
+    background: linear-gradient(135deg, var(--dark-cyan), var(--cyan));
+    animation: fadeOut 1s ease-out 2s forwards;
+  }
+  
+  .splash-logo img {
+    animation: bounce 1.5s infinite;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+  }
+  
+  /* 🌟 Responsive Design */
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+  }
+  
+  /* Mobile */
+  @media (max-width: 600px) {
+    
+  }
+  

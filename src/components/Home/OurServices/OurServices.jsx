@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ServiceCard from "@/components/Home/OurServices/ServiceCard";
-import "@/styles/OurServices.css"; // Styling for the services section
 
 export default function OurServices() {
   const [services, setServices] = useState([]);
@@ -13,13 +12,14 @@ export default function OurServices() {
   }, []);
 
   return (
-    <div className="container">
-      <section className="our-services-section max-width">
+    <div className="w-full bg-[var(--dark-cyan)]">
+      <section className="mx-auto max-w-[1300px] text-center py-[50px] px-[20px] lg:py-[40px] lg:px-[15px] md:py-[30px] md:px-[10px]">
         <div className="centered-title">
-        <h2 id="services" className="section-title">
-          Our Services
-        </h2></div>
-        <div className="services-container">
+          <h2 id="services" className="text-[2.5rem] section-title lg:text-[2rem] md:text-[1.8rem] font-bold">
+            Our Services
+          </h2>
+        </div>
+        <div className="flex flex-wrap justify-center gap-[20px] lg:gap-[15px] md:flex-col md:items-center">
           {services.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}

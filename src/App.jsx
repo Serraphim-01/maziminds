@@ -1,16 +1,27 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-import './App.css';
+import React, { lazy, useState, useEffect } from "react";
+import SplashScreen from "./pages/SplashScreen";
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-]);
+// Lazy load HomePage
+const HomePage = lazy(() => import("./pages/Home"));
 
 function App() {
-  return <RouterProvider router={appRouter} />;
+  const [showSplash, setShowSplash] = useState(true);
+
+  // Hide splash screen after 2.5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => setShowSplash(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <>
+      {showSplash ? (
+        <SplashScreen />
+      ) : (
+          <HomePage />
+      )}
+    </>
+  );
 }
 
 export default App;

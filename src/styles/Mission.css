@@ -35,3 +35,59 @@
   margin: 0 auto;
   color: #D0D6DC; /* Light gray text */
 }
+/* Tablet and Medium Screens */
+@media (max-width: 1024px) {
+  .mission {
+    padding: 50px 15px;
+  }
+
+  .mission-container {
+    max-width: 90%;
+  }
+
+  .mission h2 {
+    font-size: 2.2rem;
+  }
+
+  .mission p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .mission {
+    padding: 40px 10px;
+  }
+
+  .mission h2 {
+    font-size: 2rem;
+  }
+
+  .mission p {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .mission {
+    padding: 30px 8px;
+  }
+
+  .mission h2 {
+    font-size: 1.8rem;
+  }
+
+  .mission h2::after {
+    width: 50px; /* Reduce width of the underline */
+  }
+
+  .mission p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}

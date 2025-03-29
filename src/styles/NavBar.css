@@ -1,6 +1,42 @@
 .navbar-container {
-  background-color: var(--dark-cyan); /* Dark blue-gray background */
+  background-color: var(--dark-cyan);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  transition: all 0.3s ease-in-out;
 }
+
+/* Responsive Menu Button */
+.menu-button {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* When scrolled, only on larger screens */
+@media (min-width: 1024px) {
+  .navbar-container.scrolled {
+    width: 80vw;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-in-out forwards;
+  }
+}
+
+/* Navbar slides down when scrolled */
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
 
 .navbar {
   display: flex;
@@ -23,44 +59,46 @@
 }
 
 .logo {
-  width: 40px; /* Adjust size as needed */
+  width: 40px;
   height: 40px;
   border-radius: 50%;
-  
 }
 
-.navbar ul {
+.nav-links {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 
-.navbar ul li {
+.nav-links li {
   font-size: 1rem;
   position: relative;
 }
 
-.navbar ul li a {
+/* Smooth hover effect */
+.nav-links li a {
   text-decoration: none;
   color: var(--white);
   font-weight: 500;
   position: relative;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
   transition: color 0.3s ease-in-out;
   letter-spacing: 1px;
 }
 
-.navbar ul li a::after {
+/* Underline animation */
+.nav-links li a::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: var(--cyan); /* Cyan color for the underline */
-  transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
+  background-color: var(--cyan);
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
+/* Hover effect */
 .navbar ul li a:hover {
   color: var(--cyan);
 }
@@ -70,7 +108,54 @@
   left: 0;
 }
 
-.navbar ul li a:not(:hover)::after {
-  width: 0;
-  right: 100%;
+/* Active state effect */
+.nav-links li a.active {
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.nav-links li a.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: var(--dark-cyan);
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    display: none;
+    padding: 15px 0;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
 }

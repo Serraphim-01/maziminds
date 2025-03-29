@@ -37,6 +37,7 @@
   object-fit: cover;
 }
 
+/* Game Content */
 .game-content {
   text-align: left;
   width: 100%;
@@ -80,4 +81,51 @@
 /* Play Icon */
 .play-icon {
   font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+  .upcoming-game-card {
+    width: 260px;
+  }
+
+  .game-title {
+    font-size: 18px;
+  }
+
+  .game-description {
+    font-size: 13px;
+  }
+
+  .game-content {
+    padding: 15px;
+  }
+
+  .coming-soon-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .game-title {
+    font-size: 16px;
+  }
+
+  .game-description {
+    font-size: 12px;
+  }
+
+  .game-content {
+    padding: 12px;
+  }
+
+  .game-image-container {
+    height: 150px;
+  }
+
+  .coming-soon-btn {
+    font-size: 12px;
+  }
 }
