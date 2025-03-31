@@ -1,22 +1,27 @@
 .team-member-card {
-  width: 400px;
-  min-width: 300px;
-  background: rgba(33, 52, 64, 0.8);
-  text-align: left;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  min-width: 150px;
+  max-width: 400px; 
+  width: 100%;
   position: relative;
-  border-radius: 10px;
 }
+
+.team-member-card.site-card {
+  box-shadow: none;
+}
+
+.team-member-card.site-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+} 
 
 .team-member-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 
 .team-member-image {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 200px;
   object-fit: cover;
   display: block;
 }
@@ -48,6 +53,7 @@
   text-align: center;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  font-size: 1em;
 }
 
 /* Social links */
@@ -60,10 +66,17 @@
 
 .team-icon {
   transition: all 0.2s ease-in-out;
+  width: 50px;
+  height: auto;
+  padding: 10px;
 }
 
 .team-icon:hover {
   transform: scale(1.1);
+  background: radial-gradient(circle, var(--transparent-cyan) 0%,  rgba(0, 0, 0, 0) 80%);
+  padding: 7px;
+  border-radius: 50%;
+  color: var(--cyan);
 }
 
 /* Desktop (Above 1000px) - Slide Up Effect */
@@ -87,6 +100,12 @@
   .team-member-info {
     opacity: 0;
     transform: translateY(100%);
+    font-size: 0.7em;
+  }
+
+  .team-icon {
+    width: 30px;
+
   }
 
   .team-member-card.active .team-member-info {

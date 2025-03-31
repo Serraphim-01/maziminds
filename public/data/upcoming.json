@@ -1,15 +1,15 @@
 [
     {
         "id": 1,
-        "title": "True Dest",
-        "description": "2D-Pixel Art - Mobile",
+        "title": "Alien Blaster",
+        "description": "Coming Soon - Mobile",
         "image_url": "/assets/react.svg",
         "long_description": "This is a long description of the game."
     }, 
     {
         "id": 2,
-        "title": "True Dest",
-        "description": "2D-Pixel Art - Mobile",
+        "title": "Fast & Foolish",
+        "description": "PC Game",
         "image_url": "/assets/react.svg",
         "long_description": "This is a long description of the game."
     }

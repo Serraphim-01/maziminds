@@ -18,7 +18,7 @@ export default function Projects() {
 
   return (
     <div className="container">
-      <div className="projects-container">
+      <div className="projects-container max-width">
         <div className="centered-title">
           <h2 className="section-title" id="projects">
             Featured Projects

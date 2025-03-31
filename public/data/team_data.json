@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "profile": "/assets/react.svg",
+        "profile": "/assets/Images/profile.jpg",
         "name": "John Doe",
         "role": "Game Designer",
         "links": {
@@ -9,27 +9,29 @@
             "link2": "https://example.com/link2"
         },
         "icons": {
-            "icon1": "/assets/react.svg",
-            "icon2": "/assets/react.svg"
+            "icon1": "Github",
+            "icon2": "X"
         }
     },
     {
         "id": 2,
-        "profile": "/assets/react.svg",
+        "profile": "/assets/Images/profile2.jpg",
         "name": "John Doe",
         "role": "Game Dev",
         "links": {
             "link1": "https://example.com/link1",
-            "link2": "https://example.com/link2"
+            "link2": "https://example.com/link2",
+            "link3": "https://example.com/link3"
         },
         "icons": {
-            "icon1": "/assets/react.svg",
-            "icon2": "/assets/react.svg"
+            "icon1": "Github",
+            "icon2": "Mail",
+            "icon3": "X"
         }
     },
     {
         "id": 3,
-        "profile": "/assets/react.svg",
+        "profile": "/assets/Images/profile3.jpg",
         "name": "John Doe",
         "role": "3d Artist",
         "links": {
@@ -37,8 +39,8 @@
             "link2": "https://example.com/link2"
         },
         "icons": {
-            "icon1": "/assets/react.svg",
-            "icon2": "/assets/react.svg"
+            "icon1": "Github",
+            "icon2": "X"
         }
     }
 ]

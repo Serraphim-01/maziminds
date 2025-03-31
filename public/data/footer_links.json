@@ -1,28 +1,28 @@
 [
     {
         "id": 1,
-        "icon": "/assets/react.svg",
-        "link": "https://www.example.com"
+        "icon": "Instagram",
+        "link": "https://www.instagram.com/maziminds/"
     }, 
     {
         "id": 2,
-        "icon": "/assets/react.svg",
-        "link": "https://www.example.com"
+        "icon": "Itch",
+        "link": "https://maziminds.itch.io/"
     }, 
     {
         "id": 3,
-        "icon": "/assets/react.svg",
-        "link": "https://www.example.com"
+        "icon": "Youtube",
+        "link": "https://www.youtube.com/@maziminds"
     }, 
     {
         "id": 4,
-        "icon": "/assets/react.svg",
-        "link": "https://www.example.com"
+        "icon": "Github",
+        "link": "https://github.com/maziminds"
     }, 
     {
         "id": 5,
-        "icon": "/assets/react.svg",
-        "link": "https://www.example.com"
+        "icon": "X",
+        "link": "https://x.com/maziminds"
     }
 
 ]

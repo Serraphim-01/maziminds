@@ -1,6 +1,6 @@
 .project-card {
-  min-width: 150px; /* Minimum size */
-  max-width: 400px; /* Maximum size */
+  min-width: 150px;
+  max-width: 400px; 
   width: 100%;
   margin: 0 auto;
   background: var(--dark-cyan);

@@ -14,15 +14,18 @@ export default function OurTeam() {
 
   return (
     <div className="container">
-    <section className="our-team-section max-width`">
-      <div className="centered-title">
-      <h2 id="team" className="section-title">Our Team</h2></div>
-      <div className="team-container">
-        {team.map((member) => (
-          <TeamMemberCard key={member.id} member={member} />
-        ))}
-      </div>
-    </section>
+      <section className="our-team-section max-width`">
+        <div className="centered-title">
+          <h2 id="team" className="section-title">
+            Our Team
+          </h2>
+        </div>
+        <div className="team-container site-card-container">
+          {team.map((member) => (
+            <TeamMemberCard key={member.id} member={member} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,66 +1,66 @@
 [
-    {
-        "id": 1,
-        "service_icon": "/assets/react.svg",
-        "service_name": "3D Game Development",
-        "service_tools": {
-            "tool1": "Unity",
-            "tool2": "Unreal Engine",
-            "tool3": "Blender"
-        },
-        "service_tools_icons": {
-            "icon1": "/assets/react.svg",
-            "icon2": "/assets/react.svg",
-            "icon3": "/assets/react.svg"
-        },
-        "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
+  {
+    "id": 1,
+    "service_icon": "Controller",
+    "service_name": "3D Game Development",
+    "service_tools": {
+      "tool1": "Unity",
+      "tool2": "Unreal Engine",
+      "tool3": "Blender"
     },
-    {
-        "id": 2,
-        "service_icon": "/assets/react.svg",
-        "service_name": "3D Game Development",
-        "service_tools": {
-            "tool1": "Unity",
-            "tool2": "Unreal Engine",
-            "tool3": "Blender"
-        },
-        "service_tools_icons": {
-            "icon1": "/assets/react.svg",
-            "icon2":"/assets/react.svg",
-            "icon3": "/assets/react.svg"
-        },
-        "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
+    "service_tools_icons": {
+      "icon1": "Unity",
+      "icon2": "Unreal",
+      "icon3": "Blender"
     },
-    {
-        "id": 3,
-        "service_icon": "/assets/react.svg",
-        "service_name": "3D Game Development",
-        "service_tools": {
-            "tool1": "Unity",
-            "tool2": "Unreal Engine",
-            "tool3": "Blender"
-        },
-        "service_tools_icons": {
-            "icon1": "/assets/react.svg",
-            "icon2": "/assets/react.svg",
-            "icon3": "/assets/react.svg"
-        },
-        "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
+    "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
+  },
+  {
+    "id": 2,
+    "service_icon": "GameLine",
+    "service_name": "2D Game Development",
+    "service_tools": {
+      "tool1": "Godot",
+      "tool2": "Aseprite",
+      "tool3": "GDevelop"
     },
-    {
-        "id": 4,
-        "service_icon": "/assets/react.svg",
-        "service_name": "3D Game Development",
-        "service_tools": {
-            "tool1": "Unity",
-            "tool2": "Unreal Engine",
-            "tool3": "Blender"
-        },
-        "service_tools_icons": {
-            "icon1": "/assets/react.svg",
-            "icon2": "/assets/react.svg",
-            "icon3": "/assets/react.svg"
-        },
-        "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
-    }  
+    "service_tools_icons": {
+      "icon1": "Godot",
+      "icon2": "Aseprite",
+      "icon3": "GDevelop"
+    },
+    "service_description": "From pixel art adventures to modern 2D platformers, we craft engaging games that captivate players."
+  },
+  {
+    "id": 3,
+    "service_icon": "Music",
+    "service_name": "Music Composing",
+    "service_tools": {
+      "tool1": "FL Studio",
+      "tool2": "Ableton Live",
+      "tool3": "Pro Tools"
+    },
+    "service_tools_icons": {
+      "icon1": "FlStudio",
+      "icon2": "Abletonlive",
+      "icon3": "ProTools"
+    },
+    "service_description": "We create original soundtracks and sound effects that enhance the gaming experience."
+  },
+  {
+    "id": 4,
+    "service_icon": "Modelling",
+    "service_name": "3D Modelling",
+    "service_tools": {
+      "tool1": "Maya",
+      "tool2": "ZBrush",
+      "tool3": "Substance Painter"
+    },
+    "service_tools_icons": {
+      "icon1": "Maya",
+      "icon2": "ZBrush",
+      "icon3": "SubstancePainter"
+    },
+    "service_description": "We create high-quality 3D assets and environments for games and other digital media."
+  }
 ]
