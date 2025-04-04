@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "@/styles/Footer.css";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaGithub, FaInstagramSquare, FaItchIo, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaItchIo, FaYoutube } from "react-icons/fa";
 
 const Iconmap = {
-  X: FaSquareXTwitter,
+  X: FaXTwitter,
   Github: FaGithub,
-  Instagram: FaInstagramSquare,
+  Instagram: FaInstagram,
   Itch: FaItchIo,
   Youtube: FaYoutube,
 };
@@ -34,7 +34,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="footer-icon-link"
             >
-              {IconComponent && <IconComponent className="footer-icon t-color-gray" />}
+              {IconComponent && <IconComponent className="footer-icon" />}
             </a>
           );
         })}

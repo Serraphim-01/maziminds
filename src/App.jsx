@@ -15,11 +15,7 @@ function App() {
 
   return (
     <>
-      {showSplash ? (
-        <SplashScreen />
-      ) : (
-          <HomePage />
-      )}
+      <HomePage />
     </>
   );
 }

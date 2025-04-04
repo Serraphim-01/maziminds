@@ -1,4 +1,18 @@
 .home-container {
   display: flex;
   flex-direction: column;
+  background-color: var(--dark-cyan);
+}
+
+/* Initially hide all sections */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When in view, apply fade-in and slide-up */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
