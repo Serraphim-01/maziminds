@@ -5,8 +5,9 @@ import heroVideo from "@/assets/videos/fast_foolish.mp4";
 const HeroHeader = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "More Than Games, We Create Experiences.";
-
+  const whiteText = "More Than Games";
+  const cyanText = "We Create Experiences.";
+  const fullText = `${whiteText} ${cyanText}`;
   useEffect(() => {
     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     let iterations = 0;
@@ -25,7 +26,13 @@ const HeroHeader = () => {
               updated += chars[Math.floor(Math.random() * chars.length)];
             }
           }
-          return updated;
+        
+          const whitePart = updated.slice(0, whiteText.length);
+          const cyanPart = updated.slice(whiteText.length + 1); // +1 to skip the space
+          return (
+            `<span class="white-text">${whitePart}</span> ` +
+            `<span class="cyan-text">${cyanPart}</span>`
+          );
         });
 
         iterations++;
@@ -53,7 +60,7 @@ const HeroHeader = () => {
     <div className="container">
       <header className={`hero-header ${videoLoaded ? "loaded" : ""}`}>
         <video
-          className="hero-video"
+          className="hero-video"  
           src={heroVideo}
           autoPlay
           loop
@@ -61,14 +68,12 @@ const HeroHeader = () => {
           playsInline
         />
         <div className={`hero-content ${videoLoaded ? "show" : "hide"}`}>
-          <h1><span className="scramble-animated-text">{displayedText}</span></h1>
-          <a
-            href="#"
-            onClick={() => scrollToSection("projects")}
-            className="cta-button"
-          >
-            View Our Games
-          </a>
+        <h1>
+  <span
+    className="scramble-animated-text"
+    dangerouslySetInnerHTML={{ __html: displayedText }}
+  />
+</h1>
         </div>
       </header>
     </div>

@@ -68,8 +68,8 @@ export default function ProjectDetails() {
 
   return (
     <>
-      <div className="project-details-page">
-        <div className="project-header">
+    <div className="container">
+    <div className="project-header max-width">
           <p className="logo-text"><span className="logo-container">
                       <img className="logo" src={logo} alt="Logo" />
                     </span>Maziminds </p>
@@ -81,21 +81,21 @@ export default function ProjectDetails() {
             <p className="back-text">Back to Home</p>
           </button>
         </div>
-
+      <div className="project-details-page max-width">
         {/* Video Container */}
         <div
           className="video-container"
           onMouseEnter={() => {
             const iframe = document.getElementById("project-video");
             iframe.contentWindow.postMessage(
-              '{"event":"command","func":"pauseVideo","args":""}',
+              '{"event":"command","func":"playVideo","args":""}',
               "*"
             );
           }}
           onMouseLeave={() => {
             const iframe = document.getElementById("project-video");
             iframe.contentWindow.postMessage(
-              '{"event":"command","func":"playVideo","args":""}',
+              '{"event":"command","func":"pauseVideo","args":""}',
               "*"
             );
           }}
@@ -104,7 +104,7 @@ export default function ProjectDetails() {
             id="project-video"
             width="100%"
             height="100%"
-            src={`${project.video_url}?autoplay=1&mute=1&controls=0&rel=0&showinfo=0&modestbranding=1&enablejsapi=1`}
+            src={`${project.video_url}?autoplay=&mute=1&controls=0&rel=0&showinfo=0&modestbranding=1&enablejsapi=1`}
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
@@ -228,6 +228,7 @@ export default function ProjectDetails() {
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 }

@@ -49,6 +49,14 @@
   animation-delay: 0.3s; /* Delay to sync with load */
 }
 
+.scramble-animated-text .white-text {
+  color: white;
+}
+
+.scramble-animated-text .cyan-text {
+  color: var(--cyan);
+}
+
 /* Dark overlay */
 .hero-header::before {
   content: "";
@@ -65,7 +73,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 1100px;
   animation: textPop 1s ease-out;
   text-align: left;
   margin: 10px 0;
@@ -73,10 +81,9 @@
 
 .hero-content h1 {
   position: relative;
-  width: 70%;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #25CDC0;
+  width: 60%;
+  font-size: 4rem;
+  padding-bottom: 4rem;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   margin: 0 0 40px 0px;
 }
@@ -120,23 +127,6 @@
     opacity: 1;
   }
 }
-
-.cta-button {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #25CDC0;
-  color: #24333d;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #69e5c9;
-}
-
 /* Animation for text */
 @keyframes textPop {
   0% {
@@ -169,10 +159,6 @@
     font-size: 1.3rem;
   }
 
-  .cta-button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
 }
 
 /* Mobile */
@@ -195,10 +181,6 @@
     font-size: 1.2rem;
   }
 
-  .cta-button {
-    font-size: 0.9rem;
-    padding: 8px 18px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -215,8 +197,4 @@
     font-size: 1rem;
   }
 
-  .cta-button {
-    font-size: 0.8rem;
-    padding: 8px 16px;
-  }
 }
