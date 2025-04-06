@@ -32,9 +32,9 @@ export default function Footer() {
               href={link.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="footer-icon-link"
+              className="special-icon-link"
             >
-              {IconComponent && <IconComponent className="footer-icon" />}
+              {IconComponent && <IconComponent className="special-icon" />}
             </a>
           );
         })}

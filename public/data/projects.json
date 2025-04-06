@@ -3,40 +3,94 @@
       "id": 1,
       "title": "True Dest",
       "description": "2D-Pixel Art - Mobile",
-      "long_description": "True Destination is an immersive 2D pixel art adventure game that combines classic gameplay with modern mechanics. Players explore a vast world filled with secrets, puzzles, and challenging enemies.",
+      "long_description": "It’s a 2D pixel story-driven game. play as a character who is dead and in their afterlife. Grim Reaper will guide you through your journey of different puzzles. Fight shape shifters who have taken the form of your loved ones. Fight the hounds with weapons. Answer moral questions from the Grim Reaper and increase your chances of going to Heaven, or mess it up and end up in Hell. Buy and use power-ups to beat enemies. It also has some side quests with bonus rewards and secrets.",
+      "features": {
+        "feature1": "Auto-generated Maps/Maze",
+        "feature2": "Story Bases Question Answer system",
+        "feature3": "Custom Power Ups system"
+      },
+      "features_icon": {
+        "feature1": "Maze",
+        "feature2": "Story",
+        "feature3": "PowerUp"
+      },
       "icon_url": "/assets/Images/true-destination/icon.png",
       "image_url": "/assets/Images/true-destination/main-screenshot.jpg",
       "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
       "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
       "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
       "github_url": "https://github.com/maziminds/project-alpha",
-      "itchio_url": "https://maziminds.itch.io/true-destination"
+      "itchio_url": "https://maziminds.itch.io/true-destination",
+      "screenshots": {
+        "screenshot1": "/assets/Images/true-destination/screenshots/screenshot-1.jpg",
+        "screenshot2": "/assets/Images/true-destination/screenshots/screenshot-2.jpg",
+        "screenshot3": "/assets/Images/true-destination/screenshots/screenshot-3.jpg",
+        "screenshot4": "/assets/Images/true-destination/screenshots/screenshot-4.jpg",
+        "screenshot5": "/assets/Images/true-destination/screenshots/screenshot-5.jpg"
+      }
     },
     {
       "id": 2,
       "title": "POW-POW",
       "description": "Mobile Game",
-      "long_description": "True Destination is an immersive 2D pixel art adventure game that combines classic gameplay with modern mechanics. Players explore a vast world filled with secrets, puzzles, and challenging enemies.",
+      "long_description": "Simple, casual game built with the sole purpose of being visually appealing. Its mechanism is simple, you throw a ball in some direction and it breaks other objects and diverts in another direction, leaving some good particle effects and sound that pleases players’ eyes and ears. You lose if you don’t hit anything every 3 seconds. ",
+      "features": {
+        "feature1": "Visually Appealing",
+        "feature2": "Addictive Sound Effects",
+        "feature3": "Casual"
+      },
+      "features_icon": {
+        "feature1": "Palette",
+        "feature2": "Music",
+        "feature3": "Casual"
+      },
       "icon_url": "/assets/Images/pow-pow/icon.png",
       "image_url": "/assets/Images/pow-pow/main-screenshot.jpg",
       "video_url": "https://www.youtube-nocookie.com/embed/Lul9pRvsZeI",
       "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
       "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
       "github_url": "https://github.com/maziminds/project-alpha",
-      "itchio_url": "https://maziminds.itch.io/true-destination"
+      "itchio_url": "https://maziminds.itch.io/true-destination",
+      "screenshots": {
+        "screenshot1": "/assets/Images/pow-pow/screenshots/screenshot-1.jpg",
+        "screenshot2": "/assets/Images/pow-pow/screenshots/screenshot-2.jpg",
+        "screenshot3": "/assets/Images/pow-pow/screenshots/screenshot-3.jpg",
+        "screenshot4": "/assets/Images/pow-pow/screenshots/screenshot-4.jpg",
+        "screenshot5": "/assets/Images/pow-pow/screenshots/screenshot-5.jpg"
+      }
     },
     {
       "id": 3,
       "title": "Rummy",
       "description": "Card Game",
-      "long_description": "True Destination is an immersive 2D pixel art adventure game that combines classic gameplay with modern mechanics. Players explore a vast world filled with secrets, puzzles, and challenging enemies.",
+      "long_description": " it’s a multiplayer gambling card game with Rummy and Teen Patti games involved. players log in with their phone number and can join any table to play with other players LIVE. It also has Computer mode, where the player can practice with the computer. It uses WebSocket for real-time updates with the Node service. it can be implemented by Real or in-game money. supports payment gateways like Stripe, Razorpay, etc., comes with a nice Admin panel to manage users and withdrawals, and other game-related data",
+      "features": {
+        "feature1": "Multiplayer",
+        "feature2": "Play with Computer",
+        "feature3": "Table Joining System"
+      },
+      "features_icon": {
+        "feature1": "Multiplayer",
+        "feature2": "Computer",
+        "feature3": "Table"
+      },
       "icon_url": "/assets/Images/rummy/icon.png",
       "image_url": "/assets/Images/rummy/main-screenshot.jpg",
       "video_url": "https://www.youtube-nocookie.com/embed/gbiCvmMTvZ8",
       "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
       "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
       "github_url": "https://github.com/maziminds/project-alpha",
-      "itchio_url": "https://maziminds.itch.io/true-destination"
+      "itchio_url": "https://maziminds.itch.io/true-destination",
+      "screenshots": {
+        "screenshot1": "/assets/Images/rummy/screenshots/screenshot-1.jpg",
+        "screenshot2": "/assets/Images/rummy/screenshots/screenshot-2.jpg",
+        "screenshot3": "/assets/Images/rummy/screenshots/screenshot-3.jpg",
+        "screenshot4": "/assets/Images/rummy/screenshots/screenshot-4.jpg",
+        "screenshot5": "/assets/Images/rummy/screenshots/screenshot-5.jpg",
+        "screenshot6": "/assets/Images/rummy/screenshots/screenshot-6.jpg",
+        "screenshot7": "/assets/Images/rummy/screenshots/screenshot-7.jpg",
+        "screenshot8": "/assets/Images/rummy/screenshots/screenshot-8.jpg"
+      }
     }
   ]
   

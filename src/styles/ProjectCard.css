@@ -74,7 +74,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: solid 2px red;
+  border: solid 2px var(--cyan);
 }
 
 .project-card h3 {

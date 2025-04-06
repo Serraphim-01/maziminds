@@ -2,34 +2,34 @@
   {
     "id": 1,
     "service_icon": "Controller",
-    "service_name": "3D Game Development",
+    "service_name": "Game Development",
     "service_tools": {
       "tool1": "Unity",
-      "tool2": "Unreal Engine",
-      "tool3": "Blender"
+      "tool2": "PC",
+      "tool3": "WEB",
+      "tool4": "Mobile"
     },
     "service_tools_icons": {
       "icon1": "Unity",
-      "icon2": "Unreal",
-      "icon3": "Blender"
+      "icon2": "PC",
+      "icon3": "WEB",
+      "icon4": "Mobile"
     },
-    "service_description": "We create immersive 3D gaming experiences with cutting-edge graphics and engaging gameplay mechanics."
+    "service_description": "We create 3D & 2D games in the latest Unity version that supports almost all major platforms and input methods"
   },
   {
     "id": 2,
     "service_icon": "GameLine",
-    "service_name": "2D Game Development",
+    "service_name": "2D Art",
     "service_tools": {
-      "tool1": "Godot",
-      "tool2": "Aseprite",
-      "tool3": "GDevelop"
+      "tool1": "Aseprite",
+      "tool2": "Photoshop"
     },
     "service_tools_icons": {
-      "icon1": "Godot",
-      "icon2": "Aseprite",
-      "icon3": "GDevelop"
+      "icon1": "Aseprite",
+      "icon2": "Photoshop"
     },
-    "service_description": "From pixel art adventures to modern 2D platformers, we craft engaging games that captivate players."
+    "service_description": "Specialized in Pixel art. We also craft cartoony art style or any personalized style you need."
   },
   {
     "id": 3,
@@ -37,30 +37,26 @@
     "service_name": "Music Composing",
     "service_tools": {
       "tool1": "FL Studio",
-      "tool2": "Ableton Live",
-      "tool3": "Pro Tools"
+      "tool2": "Ableton Live"
     },
     "service_tools_icons": {
       "icon1": "FlStudio",
-      "icon2": "Abletonlive",
-      "icon3": "ProTools"
+      "icon2": "Abletonlive"
     },
-    "service_description": "We create original soundtracks and sound effects that enhance the gaming experience."
+    "service_description": "Music that takes players from the real world into the game in seconds, from calm & smooth music to Hyper & Energetic. We cover all genres."
   },
   {
     "id": 4,
     "service_icon": "Modelling",
     "service_name": "3D Modelling",
     "service_tools": {
-      "tool1": "Maya",
-      "tool2": "ZBrush",
-      "tool3": "Substance Painter"
+      "tool1": "Blender",
+      "tool2": "Maya"
     },
     "service_tools_icons": {
-      "icon1": "Maya",
-      "icon2": "ZBrush",
-      "icon3": "SubstancePainter"
+      "icon1": "Blender",
+      "icon2": "Maya"
     },
-    "service_description": "We create high-quality 3D assets and environments for games and other digital media."
+    "service_description": "High quality 3D assets in any art style you need. low poly, stylized, Realistic, Voxel, Sci-fi."
   }
 ]

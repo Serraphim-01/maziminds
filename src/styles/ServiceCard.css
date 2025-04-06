@@ -2,18 +2,9 @@
   min-width: 150px;
   max-width: 400px; 
   width: 100%;
-  
-  /* background: var(--dark-cyan);
-  border-radius: 8px;
-  text-align: center;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
 }
 
 .service-card:hover {
-  /* transform: translateY(-5px); */
   box-shadow: 0 0 30px var(--transparent-cyan);
   scale: 1.03;
 }
@@ -56,6 +47,7 @@
 .service-description {
   color: var(--gray); 
   line-height: 1.4;
+  text-align: Left;
 }
 
 .service-tools .icon-24 {

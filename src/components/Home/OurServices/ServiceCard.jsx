@@ -3,41 +3,37 @@ import "@/styles/ServiceCard.css";
 import { IoGameControllerOutline } from "react-icons/io5";
 import { RiMusicLine } from "react-icons/ri";
 import {
-  SiUnrealengine,
   SiUnity,
   SiBlender,
-  SiGodotengine,
   SiAseprite,
-  SiProtools,
   SiAutodeskmaya,
+  SiWebgl,
+  SiAdobephotoshop,
 } from "react-icons/si";
-import { MdOutlineGames } from "react-icons/md";
-import { TbCube3dSphere } from "react-icons/tb";
+import { FaMobileAlt } from "react-icons/fa";
+import { MdOutlineGames, MdLaptopMac  } from "react-icons/md";
+import { TbCube3dSphere  } from "react-icons/tb";
 import { Icon } from "@iconify/react";
-import GDevelopIcon from "@/assets/Icons/gdev.svg?react";
 import FlStudioIcon from "@/assets/Icons/icons8-fl-studio.svg?react";
 import AbletonliveIcon from "@/assets/Icons/abletonlive-svgrepo-com.svg?react";
-import ZBrushIcon from "@/assets/Icons/zbrush-svgrepo-com.svg?react";
-import SubstancePainterIcon from "@/assets/Icons/substance-painter.svg?react";
+
 
 const IconMap = {
+  PC: MdLaptopMac,
+  WEB: SiWebgl,
+  Mobile: FaMobileAlt,
   Unity: SiUnity,
-  Unreal: SiUnrealengine,
   Blender: SiBlender,
   GameLine: MdOutlineGames,
   Controller: IoGameControllerOutline,
   Music: RiMusicLine,
   Modelling: TbCube3dSphere,
-  Godot: SiGodotengine,
   Aseprite: SiAseprite,
-  ProTools: SiProtools,
   Maya: SiAutodeskmaya,
+  Photoshop: SiAdobephotoshop,
   // Local Assets (Imported as Images)
-  GDevelop: GDevelopIcon,
   FlStudio: FlStudioIcon,
   Abletonlive: AbletonliveIcon,
-  ZBrush: ZBrushIcon,
-  SubstancePainter: SubstancePainterIcon,
 };
 
 export default function ServiceCard({ service }) {

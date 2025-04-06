@@ -2,17 +2,19 @@
 import React from "react";
 import { FaGooglePlay } from "react-icons/fa";
 import "@/styles/ProjectCard.css";
-
+import { useNavigate } from "react-router-dom";
 export default function ProjectCard({
   project,
   expandedProject,
   setExpandedProject,
 }) {
   const videoSrc = `${project.video_url}?autoplay=0&mute=1&enablejsapi=1&controls=0&modestbranding=1&showinfo=0`;
+  const navigate = useNavigate();
 
   return (
     <div
       className="project-card"
+      onClick={() => navigate(`/projects/${project.id}`)}
       onMouseOver={(e) => {
         const iframe = e.currentTarget.querySelector("iframe").contentWindow;
         iframe.postMessage(
@@ -55,8 +57,8 @@ export default function ProjectCard({
           </div>
         </div>
       </div>
-      <h3>{project.title}</h3>
-      <p>{project.description}</p>
+      <h3 className="project-title">{project.title}</h3>
+      <p className="project-description">{project.description}</p>
       <button
         className="read-more-btn"
         onClick={() =>

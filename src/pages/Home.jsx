@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import HeroHeader from "../components/HeroHeader";
-import Mission from "../components/Mission";
+// import Mission from "../components/Mission";
 import "@/styles/Home.css";
 import Projects from "../components/Home/ProjectCard/Projects";
 import UpcomingGames from "../components/Home/UpcomingGames/UpcomingGames";
@@ -41,9 +41,9 @@ export default function Home() {
       <div ref={(el) => (sectionsRef.current[0] = el)} className="section">
         <HeroHeader />
       </div>
-      <div ref={(el) => (sectionsRef.current[1] = el)} className="section">
+      {/* <div ref={(el) => (sectionsRef.current[1] = el)} className="section">
         <Mission />
-      </div>
+      </div> */}
       <div ref={(el) => (sectionsRef.current[2] = el)} className="section">
         <UpcomingGames />
       </div>

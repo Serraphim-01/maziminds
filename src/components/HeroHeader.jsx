@@ -1,19 +1,45 @@
 import "@/styles/HeroHeader.css";
 import { useState, useEffect } from "react";
-import headerBg from "@/assets/png/header-bg.webp";
-import tinyHeaderBg from "@/assets/png/tiny_header-bg.webp";
+import heroVideo from "@/assets/videos/fast_foolish.mp4";
 
 const HeroHeader = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [currentImage, setCurrentImage] = useState(tinyHeaderBg);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "More Than Games, We Create Experiences.";
 
   useEffect(() => {
-    const img = new Image();
-    img.src = headerBg;
-    img.onload = () => {
-      setCurrentImage(headerBg);
-      setImageLoaded(true);
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let iterations = 0;
+    const length = fullText.length;
+
+    const startScramble = () => {
+      const interval = setInterval(() => {
+        setDisplayedText(() => {
+          let updated = "";
+          for (let i = 0; i < length; i++) {
+            if (i < iterations) {
+              updated += fullText[i];
+            } else if (fullText[i] === " ") {
+              updated += " ";
+            } else {
+              updated += chars[Math.floor(Math.random() * chars.length)];
+            }
+          }
+          return updated;
+        });
+
+        iterations++;
+        if (iterations > length) clearInterval(interval);
+      }, 50);
     };
+
+    const delay = setTimeout(startScramble, 300); // 1 second delay
+    return () => clearTimeout(delay);
+  }, []);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setVideoLoaded(true), 500);
+    return () => clearTimeout(timeout);
   }, []);
 
   const scrollToSection = (id) => {
@@ -25,14 +51,26 @@ const HeroHeader = () => {
 
   return (
     <div className="container">
-    <header className={`hero-header ${imageLoaded ? "loaded" : ""}`} style={{ backgroundImage: `url(${currentImage})` }}>
-    <div className={`hero-content ${imageLoaded ? "show" : "hide"}`}>
-        <span>Welcome to</span>
-        <h1>Maziminds</h1>
-        <p>Creating immersive 3D experiences for players worldwide</p>
-        <a href="#" onClick={() => scrollToSection("projects")} className="cta-button">View Our Projects</a>
-      </div>
-    </header>
+      <header className={`hero-header ${videoLoaded ? "loaded" : ""}`}>
+        <video
+          className="hero-video"
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <div className={`hero-content ${videoLoaded ? "show" : "hide"}`}>
+          <h1><span className="scramble-animated-text">{displayedText}</span></h1>
+          <a
+            href="#"
+            onClick={() => scrollToSection("projects")}
+            className="cta-button"
+          >
+            View Our Projects
+          </a>
+        </div>
+      </header>
     </div>
   );
 };

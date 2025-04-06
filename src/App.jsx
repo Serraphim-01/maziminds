@@ -1,22 +1,19 @@
-import React, { lazy, useState, useEffect } from "react";
+import React, { lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 import SplashScreen from "./pages/SplashScreen";
+import ProjectDetails from "./pages/ProjectDetails";
 
 // Lazy load HomePage
 const HomePage = lazy(() => import("./pages/Home"));
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true);
-
-  // Hide splash screen after 2.5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <>
-      <HomePage />
-    </>
+    // <Suspense fallback={<SplashScreen />}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects/:id" element={<ProjectDetails />} />
+      </Routes>
+    // </Suspense>
   );
 }
 
