@@ -78,7 +78,7 @@ export default function ProjectDetails() {
             <span className="back-icon">
               <FaArrowLeft />
             </span>
-            <p className="back-text">Back to Projects</p>
+            <p className="back-text">Back to Home</p>
           </button>
         </div>
 
