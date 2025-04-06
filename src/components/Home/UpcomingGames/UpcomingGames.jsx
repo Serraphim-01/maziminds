@@ -19,7 +19,7 @@ export default function UpcomingGames() {
 
   return (
     <div className="container">
-      <section className="upcoming-games-section max-width">
+      <section  id="projects" className="upcoming-games-section max-width">
         <div className="centered-title">
           <h2 className="section-title">Upcoming Games</h2>
         </div>

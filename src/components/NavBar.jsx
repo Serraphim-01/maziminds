@@ -85,10 +85,10 @@ const NavBar = () => {
           <li>
             <a
               href="#projects"
-              className={activeLink === "projects" ? "active" : ""}
+              className={activeLink === "Games" ? "active" : ""}
               onClick={(e) => scrollToSection("projects", e)}
             >
-              Projects
+              Games
             </a>
           </li>
           <li>

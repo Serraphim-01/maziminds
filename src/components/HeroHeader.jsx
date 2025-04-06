@@ -67,7 +67,7 @@ const HeroHeader = () => {
             onClick={() => scrollToSection("projects")}
             className="cta-button"
           >
-            View Our Projects
+            View Our Games
           </a>
         </div>
       </header>

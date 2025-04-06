@@ -20,8 +20,8 @@ export default function Projects() {
     <div className="container">
       <div className="projects-container max-width">
         <div className="centered-title">
-          <h2 className="section-title" id="projects">
-            Featured Projects
+          <h2 className="section-title">
+            Featured Games
           </h2>
         </div>
         <div className="project-card-container">
