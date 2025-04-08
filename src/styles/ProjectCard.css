@@ -92,51 +92,50 @@
   font-size: 1em;
 }
 
+.label-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 16px;
+  margin-bottom: 10px;
+}
+
+.label-pill {
+  background-color: var(--cyan);
+  color: var(--dark-cyan);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.simple-description {
+  color: var(--light-gray);
+  padding: 0 16px 16px;
+  font-size: 14px;
+}
+
 .project-card p {
   color: var(--gray);
 }
 
-.read-more-btn {
-  background: none;
+.mobile-play-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  background: rgba(23, 209, 197, 0.9);
   border: none;
-  color: var(--cyan);
-  cursor: pointer;
-  margin-top: 16px;
-  transition: color 0.3s ease-in-out;
-}
-
-.long-description {
-  margin-top: 10px;
-  font-size: 14px;
-  color: var(--gray);
-}
-
-.download-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #17d1c5;
   color: #112a3b;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 16px;
-  font-size: 16px;
+  border-radius: 50%;
   cursor: pointer;
-  text-decoration: none;
-  width: 150px;
-  margin-top: 15px;
-  gap: 10px;
-  transition: background 0.3s ease-in-out;
-}
-
-.download-btn:hover {
-  background: #14b8a6;
-}
-
-.playstore-icon {
-  margin-right: 8px;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition: background 0.3s ease;
 }
 
 /* Responsive Adjustments */
@@ -153,12 +152,6 @@
   .project-card p {
     font-size: 0.85em;
   }
-
-  .download-btn {
-    font-size: 12px;
-    padding: 8px 12px;
-    width: 120px;
-  }
 }
 
 /* Extra Small Screens */
@@ -173,11 +166,5 @@
 
   .project-card p {
     font-size: 0.8em;
-  }
-
-  .download-btn {
-    font-size: 12px;
-    padding: 6px 10px;
-    width: 110px;
   }
 }

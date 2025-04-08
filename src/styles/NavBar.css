@@ -29,6 +29,8 @@
 
 .logo-container {
   margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -89,7 +91,7 @@
 /* Responsive Menu Button */
 .menu-button {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   color: var(--white);
   transition: transform 0.3s ease-in-out;
@@ -99,7 +101,8 @@
 
 /* Smooth Icon Transition */
 .menu-icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -123,7 +126,7 @@
     z-index: 100000;
     transition: transform 0.3s ease-in-out;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 10px;
   }
 
@@ -170,5 +173,20 @@
 
   .nav-links li a:hover {
     background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-container {
+    margin-right: 5px;
+  }
+
+  .logo-text {
+    font-size: 1rem;
   }
 }

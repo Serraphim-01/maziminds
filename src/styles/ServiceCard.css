@@ -5,7 +5,6 @@
 }
 
 .service-card:hover {
-  box-shadow: 0 0 30px var(--transparent-cyan);
   scale: 1.03;
 }
 

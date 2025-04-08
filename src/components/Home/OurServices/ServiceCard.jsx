@@ -7,22 +7,22 @@ import {
   SiBlender,
   SiAseprite,
   SiAutodeskmaya,
-  SiWebgl,
   SiAdobephotoshop,
 } from "react-icons/si";
-import { FaMobileAlt } from "react-icons/fa";
-import { MdOutlineGames, MdLaptopMac  } from "react-icons/md";
-import { TbCube3dSphere  } from "react-icons/tb";
+import { MdOutlineGames  } from "react-icons/md";
+import { FaRobot } from "react-icons/fa";
+import { TbCube3dSphere, TbAutomation  } from "react-icons/tb";
 import { Icon } from "@iconify/react";
 import FlStudioIcon from "@/assets/Icons/icons8-fl-studio.svg?react";
 import AbletonliveIcon from "@/assets/Icons/abletonlive-svgrepo-com.svg?react";
+import { LuMonitorSmartphone} from "react-icons/lu";
+import { GiArtificialIntelligence } from 'react-icons/gi'; // AI
 
 
 const IconMap = {
-  PC: MdLaptopMac,
-  WEB: SiWebgl,
-  Mobile: FaMobileAlt,
+  // External Assets
   Unity: SiUnity,
+  CrossPlatform: LuMonitorSmartphone,
   Blender: SiBlender,
   GameLine: MdOutlineGames,
   Controller: IoGameControllerOutline,
@@ -31,6 +31,9 @@ const IconMap = {
   Aseprite: SiAseprite,
   Maya: SiAutodeskmaya,
   Photoshop: SiAdobephotoshop,
+  AI: FaRobot,
+  Automation: TbAutomation ,
+  AIPrototyping: GiArtificialIntelligence,
   // Local Assets (Imported as Images)
   FlStudio: FlStudioIcon,
   Abletonlive: AbletonliveIcon,

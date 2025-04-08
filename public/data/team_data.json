@@ -2,8 +2,8 @@
     {
         "id": 1,
         "profile": "/assets/Images/profile.jpg",
-        "name": "John Doe",
-        "role": "Game Designer",
+        "name": "Asif Patel",
+        "role": "Developer",
         "links": {
             "link1": "https://example.com/link1",
             "link2": "https://example.com/link2"
@@ -15,9 +15,9 @@
     },
     {
         "id": 2,
-        "profile": "/assets/Images/profile2.jpg",
-        "name": "John Doe",
-        "role": "Game Dev",
+        "profile": "/assets/Images/profile4.jpg",
+        "name": "Jeremiah",
+        "role": "Developer",
         "links": {
             "link1": "https://example.com/link1",
             "link2": "https://example.com/link2",
@@ -32,8 +32,36 @@
     {
         "id": 3,
         "profile": "/assets/Images/profile3.jpg",
-        "name": "John Doe",
-        "role": "3d Artist",
+        "name": "Antonio",
+        "role": "2D Artist",
+        "links": {
+            "link1": "https://example.com/link1",
+            "link2": "https://example.com/link2"
+        },
+        "icons": {
+            "icon1": "Github",
+            "icon2": "X"
+        }
+    },
+    {
+        "id": 4,
+        "profile": "/assets/Images/profile5.jpg",
+        "name": "Pete Lewis",
+        "role": "3D Artist",
+        "links": {
+            "link1": "https://example.com/link1",
+            "link2": "https://example.com/link2"
+        },
+        "icons": {
+            "icon1": "Github",
+            "icon2": "X"
+        }
+    },
+    {
+        "id": 4,
+        "profile": "/assets/Images/profile6.jpg",
+        "name": "Koby",
+        "role": "Music Composer",
         "links": {
             "link1": "https://example.com/link1",
             "link2": "https://example.com/link2"

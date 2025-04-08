@@ -15,13 +15,14 @@
 
 @media (max-width: 999px) {
   .project-card-container {
+    padding: 0;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
 }
 
 @media (max-width: 599px) {
   .project-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
