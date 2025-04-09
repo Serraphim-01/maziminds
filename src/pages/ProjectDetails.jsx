@@ -9,7 +9,6 @@ import {
   FaChevronLeft,
   FaChevronRight,
   FaArrowLeft,
-  FaPlay,
 } from "react-icons/fa";
 import { IoIosAppstore } from "react-icons/io";
 import { GiMaze } from "react-icons/gi";
@@ -29,8 +28,9 @@ export default function ProjectDetails() {
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [project, setProject] = useState(null);
-  const [showOverlay, setShowOverlay] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+  const [fade, setFade] = useState(false);
+  const [userInteracted, setUserInteracted] = useState(false);
   const videoRef = useRef(null);
 
   const Iconmap = {
@@ -47,14 +47,6 @@ export default function ProjectDetails() {
     Multiplayer: FaUsers,
     Computer: RiComputerLine,
     Table: RiLayoutGridFill,
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % totalSlides);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
   useEffect(() => {
@@ -74,34 +66,43 @@ export default function ProjectDetails() {
     return () => window.removeEventListener("resize", checkMobile);
   }, [id]);
 
-  const handleTouch = () => {
-    if (isMobile && videoRef.current) {
-      videoRef.current.contentWindow.postMessage(
-        '{"event":"command","func":"pauseVideo","args":""}',
-        "*"
-      );
-      setShowOverlay(true);
-    }
-  };
+  // Auto-slide logic
+  useEffect(() => {
+    if (!project || userInteracted) return;
 
-  const handlePlay = () => {
-    if (videoRef.current) {
-      videoRef.current.contentWindow.postMessage(
-        '{"event":"command","func":"playVideo","args":""}',
-        "*"
-      );
-      setShowOverlay(false);
-    }
-  };
+    const totalSlides = Object.values(project.screenshots).length;
+
+    // Auto-slide with fade transition
+    const interval = setInterval(() => {
+      setFade(true); // trigger fade-out
+
+      setTimeout(() => {
+        setCurrentSlide((prev) => (prev + 1) % totalSlides);
+        setFade(false);
+      }, 500);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [project, currentSlide, userInteracted]);
 
   if (!project) return <p>Loading...</p>;
 
   const screenshots = Object.values(project.screenshots);
   const totalSlides = screenshots.length;
 
+  const nextSlide = () => {
+    setUserInteracted(true);
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setUserInteracted(true);
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
   return (
     <>
-      <div className="container" onTouchStart={handleTouch}>
+      <div className="container">
         <div className="project-header max-width">
           <p className="logo-text">
             <span className="logo-container">
@@ -109,42 +110,17 @@ export default function ProjectDetails() {
             </span>
             Maziminds
           </p>
-
-          <button onClick={() => navigate(-1)} className="back-button">
-            <span className="back-icon">
-              <FaArrowLeft />
-            </span>
-            <p className="back-text">Back to Home</p>
-          </button>
         </div>
 
         <div className="project-details-page max-width">
           {/* Video Container */}
-          <div
-            className="video-container"
-            onMouseEnter={() => {
-              if (!isMobile && videoRef.current) {
-                videoRef.current.contentWindow.postMessage(
-                  '{"event":"command","func":"playVideo","args":""}',
-                  "*"
-                );
-              }
-            }}
-            onMouseLeave={() => {
-              if (!isMobile && videoRef.current) {
-                videoRef.current.contentWindow.postMessage(
-                  '{"event":"command","func":"pauseVideo","args":""}',
-                  "*"
-                );
-              }
-            }}
-          >
+          <div className="video-container">
             <iframe
               ref={videoRef}
               id="project-video"
               width="100%"
               height="100%"
-              src={`${project.video_url}?autoplay=&mute=1&controls=0&rel=0&showinfo=0&modestbranding=1&enablejsapi=1`}
+              src={`https://www.youtube-nocookie.com/embed/${project.video_id}?autoplay=1&mute=1&controls=0&rel=0&showinfo=0&modestbranding=1&enablejsapi=1&loop=1&playlist=${project.video_id}`}
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
@@ -152,22 +128,19 @@ export default function ProjectDetails() {
               className="video-iframe"
             />
 
-            {showOverlay && (
-              <div className="hover-overlay">
-                <img src={project.image_url} alt="Video Hover Image" />
-                {isMobile && (
-                  <button className="mobile-play-button" onClick={handlePlay}>
-                    <FaPlay className="mobile-play-icon" />
-                  </button>
-                )}
-              </div>
-            )}
+            <button onClick={() => navigate(-1)} className="back-button">
+              <span className="back-icon">
+                <FaArrowLeft />
+              </span>
+              <p className="back-text">Back to Home</p>
+            </button>
 
             <img
               src={project.icon_url}
               className="video-icon"
               alt="Project Icon"
             />
+
             <div className="video-links">
               {project.google_play_url && (
                 <a
@@ -216,10 +189,18 @@ export default function ProjectDetails() {
             </div>
           </div>
 
-          {/* Title and Description */}
+          {/* Title and Labels */}
           <div className="project-info">
             <h1 className="project-title">{project.title}</h1>
-            <p className="project-description">{project.description}</p>
+
+            {/* Display labels */}
+            <div className="project-labels">
+              {Object.values(project.label || {}).map((label, index) => (
+                <span key={index} className="project-label">
+                  {label}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* About Section */}
@@ -257,7 +238,7 @@ export default function ProjectDetails() {
               <img
                 src={screenshots[currentSlide]}
                 alt={`Screenshot ${currentSlide + 1}`}
-                className="screenshot-image"
+                className={`screenshot-image ${fade ? "fade-out" : ""}`}
               />
 
               <button className="nav-button right" onClick={nextSlide}>
@@ -270,7 +251,10 @@ export default function ProjectDetails() {
                 <span
                   key={index}
                   className={`dot ${index === currentSlide ? "active" : ""}`}
-                  onClick={() => setCurrentSlide(index)}
+                  onClick={() => {
+                    setUserInteracted(true);
+                    setCurrentSlide(index);
+                  }}
                 ></span>
               ))}
             </div>

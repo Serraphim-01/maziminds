@@ -116,8 +116,6 @@ export default function ProjectCard({ project }) {
       </div>
 
       <h3 className="project-title">{project.title}</h3>
-      <p className="project-description">{project.description}</p>
-
       <div className="label-container">
         {getLabels().map((label, index) => (
           <span key={index} className="label-pill">

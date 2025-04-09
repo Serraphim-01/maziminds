@@ -2,10 +2,9 @@
   {
     "id": 1,
     "title": "True Destination",
-    "description": "2D-Pixel Art - Mobile",
     "long_description": "It’s a 2D pixel story-driven game. play as a character who is dead and in their afterlife. Grim Reaper will guide you through your journey of different puzzles. Fight shape shifters who have taken the form of your loved ones. Fight the hounds with weapons. Answer moral questions from the Grim Reaper and increase your chances of going to Heaven, or mess it up and end up in Hell. Buy and use power-ups to beat enemies. It also has some side quests with bonus rewards and secrets.",
     "simple_description": "2D pixel puzzle type game. Explore puzzle maps while running from enemies and collecting power-ups.",
-    "label-icons": {
+    "label": {
       "label1": "PixelArt",
       "label2": "Mobile"
     },
@@ -22,6 +21,7 @@
     "icon_url": "/assets/Images/true-destination/icon.png",
     "image_url": "/assets/Images/true-destination/main-screenshot.jpg",
     "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
+    "video_id": "quvXAKjJ9qM",
     "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
     "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
     "github_url": "https://github.com/maziminds/project-alpha",
@@ -37,9 +37,8 @@
   {
     "id": 2,
     "title": "POW-POW",
-    "description": "Mobile Game",
     "long_description": "Simple, casual game built with the sole purpose of being visually appealing. Its mechanism is simple, you throw a ball in some direction and it breaks other objects and diverts in another direction, leaving some good particle effects and sound that pleases players’ eyes and ears. You lose if you don’t hit anything every 3 seconds. ",
-    "simple_description": "2D pixel puzzle type game. Explore puzzle maps while running from enemies and collecting power-ups.",
+    "simple_description": "Casual ball-throwing game focused on visuals, particles, and sound; lose if inactive for 3 seconds.",
     "label": {
       "label1": "Hyper Casual"
     },
@@ -56,6 +55,7 @@
     "icon_url": "/assets/Images/pow-pow/icon.png",
     "image_url": "/assets/Images/pow-pow/main-screenshot.jpg",
     "video_url": "https://www.youtube-nocookie.com/embed/Lul9pRvsZeI",
+    "video_id": "Lul9pRvsZeI",
     "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
     "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
     "github_url": "https://github.com/maziminds/project-alpha",
@@ -71,8 +71,7 @@
   {
     "id": 3,
     "title": "Rummy",
-    "description": "Card Game",
-    "simple_description": "2D pixel puzzle type game. Explore puzzle maps while running from enemies and collecting power-ups.",
+    "simple_description": "Multiplayer card game with Rummy, Teen Patti, real-time play, payments, and admin panel",
     "label": {
       "label1": "Multiplayer",
       "label2": "Gambling"
@@ -91,6 +90,7 @@
     "icon_url": "/assets/Images/rummy/icon.png",
     "image_url": "/assets/Images/rummy/main-screenshot.jpg",
     "video_url": "https://www.youtube-nocookie.com/embed/gbiCvmMTvZ8",
+    "video_id": "gbiCvmMTvZ8",
     "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
     "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
     "github_url": "https://github.com/maziminds/project-alpha",

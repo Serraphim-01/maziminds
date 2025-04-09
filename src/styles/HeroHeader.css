@@ -122,8 +122,8 @@
 @media (max-width: 768px) {
   .hero-header {
     height: 80vh;
-    padding: 0 10px;
-    align-items: flex-end;
+    padding-top: 10vh;
+    align-items: flex-start;
   }
 
   .hero-content {

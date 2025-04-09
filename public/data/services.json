@@ -1,6 +1,20 @@
 [
   {
     "id": 1,
+    "service_icon": "AIPrototyping",
+    "service_name": "AI Prototyping",
+    "service_tools": {
+      "tool1": "AI Tools",
+      "tool2": "Automation"
+    },
+    "service_tools_icons": {
+      "icon1": "AI",
+      "icon2": "Automation"
+    },
+    "service_description": "We can make quick prototypes of your game ideas with AI-generated Assets. saving you a lot of time while still giving you a good view of your game"
+  },
+  {
+    "id": 2,
     "service_icon": "Controller",
     "service_name": "Game Development",
     "service_tools": {
@@ -14,7 +28,7 @@
     "service_description": "We create 3D & 2D games in the latest Unity version that supports almost all major platforms and input methods"
   },
   {
-    "id": 2,
+    "id": 3,
     "service_icon": "GameLine",
     "service_name": "2D Art",
     "service_tools": {
@@ -28,7 +42,7 @@
     "service_description": "Specialized in Pixel art. We also craft cartoony art style or any personalized style you need."
   },
   {
-    "id": 3,
+    "id": 4,
     "service_icon": "Music",
     "service_name": "Music Composing",
     "service_tools": {
@@ -42,7 +56,7 @@
     "service_description": "Music that takes players from the real world into the game in seconds, from calm & smooth music to Hyper & Energetic. We cover all genres."
   },
   {
-    "id": 4,
+    "id": 5,
     "service_icon": "Modelling",
     "service_name": "3D Modelling",
     "service_tools": {
@@ -54,19 +68,5 @@
       "icon2": "Maya"
     },
     "service_description": "High quality 3D assets in any art style you need. low poly, stylized, Realistic, Voxel, Sci-fi."
-  },
-  {
-    "id": 5,
-    "service_icon": "AIPrototyping",
-    "service_name": "AI Prototyping",
-    "service_tools": {
-      "tool1": "AI Tools",
-      "tool2": "Automation"
-    },
-    "service_tools_icons": {
-      "icon1": "AI",
-      "icon2": "Automation"
-    },
-    "service_description": "We can make quick prototypes of your game ideas with AI-generated Assets. saving you a lot of time while still giving you a good view of your game"
   }
 ]
