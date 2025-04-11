@@ -17,9 +17,10 @@ import {
   LuBookOpen,
   LuArmchair,
   LuZap,
+  LuBot,
   LuKeyboardMusic,
 } from "react-icons/lu";
-import { RiComputerLine, RiLayoutGridFill } from "react-icons/ri";
+import { RiLayoutGridFill } from "react-icons/ri";
 import Footer from "@/components/Footer";
 import logo from "@/assets/logo.png";
 
@@ -45,7 +46,7 @@ export default function ProjectDetails() {
     Music: LuKeyboardMusic,
     Casual: LuArmchair,
     Multiplayer: FaUsers,
-    Computer: RiComputerLine,
+    Bot: LuBot,
     Table: RiLayoutGridFill,
   };
 
@@ -142,50 +143,26 @@ export default function ProjectDetails() {
             />
 
             <div className="video-links">
-              {project.google_play_url && (
-                <a
-                  href={project.google_play_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Google Play"
-                  className="special-icon-link"
-                >
-                  <FaGooglePlay className="special-icon" />
-                </a>
-              )}
-              {project.app_store_url && (
-                <a
-                  href={project.app_store_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="App Store"
-                  className="special-icon-link"
-                >
-                  <IoIosAppstore className="special-icon" />
-                </a>
-              )}
-              {project.github_url && (
-                <a
-                  href={project.github_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="GitHub"
-                  className="special-icon-link"
-                >
-                  <FaGithub className="special-icon" />
-                </a>
-              )}
-              {project.itchio_url && (
-                <a
-                  href={project.itchio_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Itch.io"
-                  className="special-icon-link"
-                >
-                  <FaItchIo className="special-icon" />
-                </a>
-              )}
+              {Object.entries(project.urls).map(([key, url]) => {
+                const iconKey = project.urls_icons[key];
+                const IconComponent = Iconmap[iconKey];
+
+                return (
+                  url &&
+                  IconComponent && (
+                    <a
+                      key={key}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={iconKey}
+                      className="special-icon-link"
+                    >
+                      <IconComponent className="special-icon" />
+                    </a>
+                  )
+                );
+              })}
             </div>
           </div>
 

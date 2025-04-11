@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import UpcomingGameCard from "@/components/Home/UpcomingGames/UpcomingGameCard";
-import "@/styles/UpcomingGames.css";
+import ProjectCard from "@/components/Home/ProjectCard/ProjectCard";
+import "@/styles/Projects.css";
 
 export default function UpcomingGames() {
   const [games, setGames] = useState([]);
@@ -14,18 +14,22 @@ export default function UpcomingGames() {
 
   const containerClass =
     games.length === 2
-      ? "upcoming-games-container flex-mode"
-      : "upcoming-games-container grid-mode";
+      ? "project-card-container flex-mode"
+      : "project-card-container grid-mode";
 
   return (
     <div className="container">
-      <section  id="projects" className="upcoming-games-section max-width">
+      <section id="projects" className="projects-container centered max-width">
         <div className="centered-title">
           <h2 className="section-title">Upcoming Games</h2>
         </div>
         <div className={containerClass}>
           {games.map((game) => (
-            <UpcomingGameCard key={game.id} game={game} />
+            <ProjectCard
+              key={game.id}
+              project={game}
+              externalLink={game.itchio_url}
+            />
           ))}
         </div>
       </section>

@@ -3,7 +3,7 @@ import "@/styles/ProjectCard.css";
 import { useNavigate } from "react-router-dom";
 import { FaPlay } from "react-icons/fa";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, externalLink, isFeatured }) {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -36,8 +36,12 @@ export default function ProjectCard({ project }) {
     };
 
     if (isPlaying) {
-      document.addEventListener("touchstart", handleUserInteraction, { passive: true });
-      document.addEventListener("scroll", handleUserInteraction, { passive: true });
+      document.addEventListener("touchstart", handleUserInteraction, {
+        passive: true,
+      });
+      document.addEventListener("scroll", handleUserInteraction, {
+        passive: true,
+      });
     }
 
     return () => {
@@ -63,11 +67,19 @@ export default function ProjectCard({ project }) {
     postVideoCommand("playVideo");
   };
 
+  const handleCardClick = () => {
+    if (externalLink) {
+      window.open(externalLink, "_blank");
+    } else {
+      navigate(`/projects/${project.id}`);
+    }
+  };
+
   return (
     <div
       className="project-card"
       ref={containerRef}
-      onClick={() => navigate(`/projects/${project.id}`)}
+      onClick={handleCardClick}
       onMouseOver={(e) => {
         if (!isTouchDevice) {
           postVideoCommand("playVideo");
@@ -114,7 +126,7 @@ export default function ProjectCard({ project }) {
           </button>
         )}
       </div>
-
+      
       <h3 className="project-title">{project.title}</h3>
       <div className="label-container">
         {getLabels().map((label, index) => (
@@ -125,6 +137,12 @@ export default function ProjectCard({ project }) {
       </div>
 
       <p className="simple-description">{project.simple_description}</p>
+
+      {isFeatured && (
+        <button className="read-more-btn" onClick={handleCardClick}>
+          Read More
+        </button>
+      )}
     </div>
   );
 }

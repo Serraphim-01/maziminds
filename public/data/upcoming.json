@@ -2,15 +2,70 @@
     {
         "id": 1,
         "title": "Alien Blaster",
-        "description": "Coming Soon - Mobile",
+        "simple_description": "Simple Description",
+        "long_description": "This is a long description of the game.",
+        "label": {
+            "label1": "3D",
+            "label2": "Mobile"
+        },
+        "features": {
+            "feature1": "Auto-generated Maps/Maze",
+            "feature2": "Story Bases Question Answer system",
+            "feature3": "Custom Power Ups system"
+        },
+        "features_icon": {
+            "feature1": "Maze",
+            "feature2": "Story",
+            "feature3": "PowerUp"
+        },
+        "icon_url": "/assets/react.svg",
         "image_url": "/assets/react.svg",
-        "long_description": "This is a long description of the game."
+        "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
+        "video_id": "quvXAKjJ9qM",
+        "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
+        "app_store_url": "https://apps.apple.com/us/app/true-destination/id1451451451",
+        "itchio_url": "https://maziminds.itch.io/true-destination",
+        "screenshots": {
+            "screenshot1": "/assets/react.svg",
+            "screenshot2": "/assets/react.svg",
+            "screenshot3": "/assets/react.svg",
+            "screenshot4": "/assets/react.svg",
+            "screenshot5": "/assets/react.svg"
+        }
     }, 
     {
-        "id": 2,
-        "title": "Fast & Foolish",
-        "description": "PC Game",
+        "id": 1,
+        "title": "Fast and Foolish",
+        "simple_description": "Simple Description",
+        "long_description": "This is a long description of the game.",
+        "label": {
+            "label1": "3D",
+            "label2": "Cross Platform",
+            "label3": "racing"
+        },
+        "features": {
+            "feature1": "Auto-generated Maps/Maze",
+            "feature2": "Story Bases Question Answer system",
+            "feature3": "Custom Power Ups system"
+        },
+        "features_icon": {
+            "feature1": "Maze",
+            "feature2": "Story",
+            "feature3": "PowerUp"
+        },
+        "icon_url": "/assets/react.svg",
         "image_url": "/assets/react.svg",
-        "long_description": "This is a long description of the game."
+        "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
+        "video_id": "quvXAKjJ9qM",
+        "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
+        "app_store_url": "https://apps.apple.com/us/app/true-destination/id1451451451",
+        "itchio_url": "https://maziminds.itch.io/true-destination",
+        "screenshots": {
+            "screenshot1": "/assets/react.svg",
+            "screenshot2": "/assets/react.svg",
+            "screenshot3": "/assets/react.svg",
+            "screenshot4": "/assets/react.svg",
+            "screenshot5": "/assets/react.svg"
+        }
     }
 ]

@@ -84,8 +84,7 @@
   text-align: left;
 }
 
-.project-card p,
-.read-more-btn {
+.project-card p {
   padding: 0 16px;
   margin-bottom: 16px;
   text-align: left;
@@ -107,12 +106,6 @@
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
-}
-
-.simple-description {
-  color: var(--light-gray);
-  padding: 0 16px 16px;
-  font-size: 14px;
 }
 
 .project-card p {
@@ -137,6 +130,32 @@
   z-index: 2;
   transition: background 0.3s ease;
 }
+
+.read-more-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  background-color: transparent;
+  color: var(--cyan);
+  border: none;
+  margin: 5px;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.project-card:hover .read-more-btn {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  background-color: var(--transparent-black);
+}
+
 
 /* Responsive Adjustments */
 /* Small Screens */

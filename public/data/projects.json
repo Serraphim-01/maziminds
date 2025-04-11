@@ -22,10 +22,14 @@
     "image_url": "/assets/Images/true-destination/main-screenshot.jpg",
     "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
     "video_id": "quvXAKjJ9qM",
-    "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
-    "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
-    "github_url": "https://github.com/maziminds/project-alpha",
-    "itchio_url": "https://maziminds.itch.io/true-destination",
+    "urls": {
+      "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
+      "itchio_url": "https://maziminds.itch.io/true-destination"
+    },
+    "urls_icons": {
+      "google_play_url": "GooglePlay",
+      "itchio_url": "Itch"
+    },
     "screenshots": {
       "screenshot1": "/assets/Images/true-destination/screenshots/screenshot-1.jpg",
       "screenshot2": "/assets/Images/true-destination/screenshots/screenshot-2.jpg",
@@ -56,10 +60,12 @@
     "image_url": "/assets/Images/pow-pow/main-screenshot.jpg",
     "video_url": "https://www.youtube-nocookie.com/embed/Lul9pRvsZeI",
     "video_id": "Lul9pRvsZeI",
-    "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
-    "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
-    "github_url": "https://github.com/maziminds/project-alpha",
-    "itchio_url": "https://maziminds.itch.io/true-destination",
+    "urls": {
+      "itchio_url": "https://maziminds.itch.io/true-destination"
+    },
+    "urls_icons": {
+      "itchio_url": "Itch"
+    },
     "screenshots": {
       "screenshot1": "/assets/Images/pow-pow/screenshots/screenshot-1.jpg",
       "screenshot2": "/assets/Images/pow-pow/screenshots/screenshot-2.jpg",
@@ -79,22 +85,25 @@
     "long_description": " it’s a multiplayer gambling card game with Rummy and Teen Patti games involved. players log in with their phone number and can join any table to play with other players LIVE. It also has Computer mode, where the player can practice with the computer. It uses WebSocket for real-time updates with the Node service. it can be implemented by Real or in-game money. supports payment gateways like Stripe, Razorpay, etc., comes with a nice Admin panel to manage users and withdrawals, and other game-related data",
     "features": {
       "feature1": "Multiplayer",
-      "feature2": "Play with Computer",
+      "feature2": "Play with Bot",
       "feature3": "Table Joining System"
     },
     "features_icon": {
       "feature1": "Multiplayer",
-      "feature2": "Computer",
+      "feature2": "Bot",
       "feature3": "Table"
     },
     "icon_url": "/assets/Images/rummy/icon.png",
     "image_url": "/assets/Images/rummy/main-screenshot.jpg",
     "video_url": "https://www.youtube-nocookie.com/embed/gbiCvmMTvZ8",
     "video_id": "gbiCvmMTvZ8",
-    "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
-    "app_store_url": "https://apps.apple.com/us/app/project-alpha/id123456789",
-    "github_url": "https://github.com/maziminds/project-alpha",
-    "itchio_url": "https://maziminds.itch.io/true-destination",
+    "urls": {
+      "itchio_url": "https://maziminds.itch.io/card-ease"
+    },
+    "urls_icons": {
+
+      "itchio_url": "Itch"
+    },
     "screenshots": {
       "screenshot1": "/assets/Images/rummy/screenshots/screenshot-1.jpg",
       "screenshot2": "/assets/Images/rummy/screenshots/screenshot-2.jpg",

@@ -56,6 +56,10 @@
   font-size: 1em;
 }
 
+.team-member-role {
+  padding: 0.5rem 0 1rem 0;
+}
+
 /* Social links */
 .team-member-links {
   display: flex;
@@ -64,20 +68,6 @@
   margin-top: 10px;
 }
 
-.team-icon {
-  transition: all 0.2s ease-in-out;
-  width: 50px;
-  height: auto;
-  padding: 10px;
-}
-
-.team-icon:hover {
-  transform: scale(1.1);
-  background: radial-gradient(circle, var(--transparent-cyan) 0%,  rgba(0, 0, 0, 0) 80%);
-  padding: 7px;
-  border-radius: 50%;
-  color: var(--cyan);
-}
 
 /* Desktop (Above 1000px) - Slide Up Effect */
 @media (min-width: 1001px) {
@@ -103,11 +93,6 @@
     font-size: 0.7em;
   }
 
-  .team-icon {
-    width: 30px;
-
-  }
-
   .team-member-card.active .team-member-info {
     opacity: 1;
     transform: translateY(0);
@@ -115,5 +100,21 @@
 
   .team-member-card.active .team-member-indicator {
     opacity: 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .team-member-card {
+    min-width: 120px;
+  }
+  
+  .team-member-links .special-icon-link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .team-member-role {
+    padding: 0.2rem 0 0.5rem 0;
   }
 }

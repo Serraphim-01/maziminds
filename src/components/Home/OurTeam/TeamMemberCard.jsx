@@ -49,9 +49,9 @@ export default function TeamMemberCard({ member }) {
                 href={member.links[key]}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="team-member-link"
+                className="special-icon-link"
               >
-                {IconComponent ? <IconComponent className="team-icon t-color-gray"/> : "🔗"}
+                {IconComponent ? <IconComponent className="special-icon"/> : "🔗"}
               </a>
             );
           })}

@@ -4,13 +4,24 @@
 }
 
 .project-card-container {
-  display: grid;
   gap: 20px;
-  justify-content: center;
+}
+
+.centered .flex-mode {
+  margin: 0 auto;
+}
+
+.grid-mode {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1200px;
-  margin: 0 auto;
   padding: 20px;
+  margin: 0 auto;
+}
+
+.flex-mode {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 999px) {
@@ -18,15 +29,25 @@
     padding: 0;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
+
+  .flex-mode .project-card {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .centered .flex-mode {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 599px) {
   .project-card-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+  
 }
-
-
 
 /* View More Button */
 .view-btn-container {

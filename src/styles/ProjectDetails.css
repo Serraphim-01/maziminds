@@ -214,6 +214,7 @@
   opacity: 0;
   transform: scale(0.98);
 }
+
 .nav-button {
   position: absolute;
   top: 50%;
@@ -291,21 +292,21 @@
   }
 
   .video-icon {
-    height: 40px;
-    width: 40px;
-    bottom: 5px;
-    left: 5px;
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    left: 20px;
   }
 
   .video-links {
-    bottom: 5px;
-    right: 5px;
-    gap: 5px;
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
   }
 
   .video-links .special-icon-link {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .project-info .project-title {

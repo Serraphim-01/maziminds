@@ -5,7 +5,7 @@
 
 @media (max-width: 999px) {
   .team-container.site-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .our-team-section {
@@ -15,6 +15,6 @@
 
 @media (max-width: 599px) {
   .team-container.site-card-container {
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   }
 }

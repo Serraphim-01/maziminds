@@ -101,6 +101,7 @@
 @media (max-width: 1024px) {
   .hero-header {
     height: 90vh;
+    padding-top: 20vh;
   }
 
   .hero-content {
@@ -122,7 +123,7 @@
 @media (max-width: 768px) {
   .hero-header {
     height: 80vh;
-    padding-top: 10vh;
+    padding-top: 20vh;
     align-items: flex-start;
   }
 

@@ -24,11 +24,12 @@ export default function Projects() {
             Featured Games
           </h2>
         </div>
-        <div className="project-card-container">
+        <div className="project-card-container grid-mode">
           {featuredProjects.map((project) => (
             <ProjectCard
               key={project.id}
               project={project}
+              isFeatured={true}
               expandedProject={expandedProject}
               setExpandedProject={setExpandedProject}
             />
