@@ -141,32 +141,10 @@ export default function ProjectDetails() {
               className="video-icon"
               alt="Project Icon"
             />
-
-            <div className="video-links">
-              {Object.entries(project.urls).map(([key, url]) => {
-                const iconKey = project.urls_icons[key];
-                const IconComponent = Iconmap[iconKey];
-
-                return (
-                  url &&
-                  IconComponent && (
-                    <a
-                      key={key}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={iconKey}
-                      className="special-icon-link"
-                    >
-                      <IconComponent className="special-icon" />
-                    </a>
-                  )
-                );
-              })}
-            </div>
           </div>
 
           {/* Title and Labels */}
+          <div className="project-info-container">
           <div className="project-info">
             <h1 className="project-title">{project.title}</h1>
 
@@ -178,6 +156,30 @@ export default function ProjectDetails() {
                 </span>
               ))}
             </div>
+          </div>
+
+          <div className="video-links">
+            {Object.entries(project.urls).map(([key, url]) => {
+              const iconKey = project.urls_icons[key];
+              const IconComponent = Iconmap[iconKey];
+
+              return (
+                url &&
+                IconComponent && (
+                  <a
+                    key={key}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={iconKey}
+                    className="special-icon-link"
+                  >
+                    <IconComponent className="special-icon" />
+                  </a>
+                )
+              );
+            })}
+          </div>
           </div>
 
           {/* About Section */}

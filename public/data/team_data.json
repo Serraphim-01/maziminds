@@ -6,11 +6,13 @@
         "role": "Developer",
         "links": {
             "link1": "https://github.com/mazimez",
-            "link2": "https://example.com/link2"
+            "link2": "https://example.com/link2",
+            "link3": "https://example.com/link3"
         },
         "icons": {
             "icon1": "Github",
-            "icon2": "X"
+            "icon2": "X",
+            "icon3": "LinkedIn"
         }
     },
     {
