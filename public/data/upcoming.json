@@ -36,7 +36,7 @@
     {
         "id": 1,
         "title": "Fast and Foolish",
-        "simple_description": "Simple Description",
+        "simple_description": "Car race game with element of fun and foolishness. race variations of cars with each other",
         "long_description": "This is a long description of the game.",
         "label": {
             "label1": "3D",
@@ -53,9 +53,9 @@
             "feature2": "Story",
             "feature3": "PowerUp"
         },
-        "icon_url": "/assets/react.svg",
-        "image_url": "/assets/react.svg",
-        "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
+        "icon_url": "/assets/Images/fast-foolish/icon.png",
+        "image_url": "/assets/Images/fast-foolish/main-screenshot.jpg",
+        "video_url": "https://www.youtube-nocookie.com/embed/VR9gv3tBb9M",
         "video_id": "quvXAKjJ9qM",
         "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
         "app_store_url": "https://apps.apple.com/us/app/true-destination/id1451451451",
