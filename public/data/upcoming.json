@@ -5,7 +5,7 @@
         "simple_description": "Simple Description",
         "long_description": "This is a long description of the game.",
         "label": {
-            "label1": "3D",
+            "label1": "Hyper Casual",
             "label2": "Mobile"
         },
         "features": {
@@ -18,10 +18,10 @@
             "feature2": "Story",
             "feature3": "PowerUp"
         },
-        "icon_url": "/assets/react.svg",
-        "image_url": "/assets/react.svg",
-        "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
-        "video_id": "quvXAKjJ9qM",
+        "icon_url": "/assets/Images/alien-blaster/icon.png",
+        "image_url": "/assets/Images/alien-blaster/main-screenshot.jpg",
+        "video_url": "https://www.youtube-nocookie.com/embed/rHcdAi4_064",
+        "video_id": "rHcdAi4_064",
         "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
         "app_store_url": "https://apps.apple.com/us/app/true-destination/id1451451451",
         "itchio_url": "https://maziminds.itch.io/true-destination",
@@ -39,9 +39,9 @@
         "simple_description": "Car race game with element of fun and foolishness. race variations of cars with each other",
         "long_description": "This is a long description of the game.",
         "label": {
-            "label1": "3D",
+            "label1": "Foolish",
             "label2": "Cross Platform",
-            "label3": "racing"
+            "label3": "Racing"
         },
         "features": {
             "feature1": "Auto-generated Maps/Maze",
@@ -56,7 +56,7 @@
         "icon_url": "/assets/Images/fast-foolish/icon.png",
         "image_url": "/assets/Images/fast-foolish/main-screenshot.jpg",
         "video_url": "https://www.youtube-nocookie.com/embed/VR9gv3tBb9M",
-        "video_id": "quvXAKjJ9qM",
+        "video_id": "VR9gv3tBb9M",
         "google_play_url": "https://play.google.com/store/apps/details?id=com.maziminds.truedestination",
         "app_store_url": "https://apps.apple.com/us/app/true-destination/id1451451451",
         "itchio_url": "https://maziminds.itch.io/true-destination",

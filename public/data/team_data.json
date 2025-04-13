@@ -2,10 +2,10 @@
     {
         "id": 1,
         "profile": "/assets/Images/profile.jpg",
-        "name": "Asif Patel",
+        "name": "Asif",
         "role": "Developer",
         "links": {
-            "link1": "https://example.com/link1",
+            "link1": "https://github.com/mazimez",
             "link2": "https://example.com/link2"
         },
         "icons": {
