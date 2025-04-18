@@ -3,11 +3,13 @@ import "@/styles/TeamMemberCard.css";
 import { BsTwitterX } from "react-icons/bs";
 import { LuGithub } from "react-icons/lu";
 import { IoMailOutline } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa";  
 
 const Iconsmap = {
   Github: LuGithub,
   X: BsTwitterX,
   Mail: IoMailOutline,
+  LinkedIn: FaLinkedinIn
 };
 
 export default function TeamMemberCard({ member }) {
