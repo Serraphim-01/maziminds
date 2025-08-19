@@ -74,7 +74,7 @@ export default function ClientCard({ client, externalLink, isFeatured }) {
     <div
       className="project-card"
       ref={containerRef}
-      onClick={handleCardClick}
+      // onClick={handleCardClick}
       onMouseOver={(e) => {
         if (!isTouchDevice) {
           postVideoCommand("playVideo");
@@ -119,11 +119,12 @@ export default function ClientCard({ client, externalLink, isFeatured }) {
 
       <p className="simple-description">{client.long_description}</p>
 
-      {isFeatured && (
-        <button className="read-more-btn" onClick={handleCardClick}>
+      {/* {isFeatured && (
+        <button 
+        className="read-more-btn" onClick={handleCardClick}>
           Read More
         </button>
-      )}
+      )} */}
     </div>
   );
 }
