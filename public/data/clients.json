@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Client A",
+    "long_description": "Working with this team was a fantastic experience. They were professional, responsive, and delivered a high-quality product that exceeded our expectations. We would definitely recommend them to anyone looking for a reliable and talented development partner.",
+    "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
+    "image_url": "/assets/Images/true-destination/main-screenshot.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Client B",
+    "long_description": "The communication throughout the project was excellent, and they were always willing to go the extra mile to ensure we were happy with the final product. We are thrilled with the results and look forward to working with them again in the future.",
+    "video_url": "https://www.youtube-nocookie.com/embed/Lul9pRvsZeI",
+    "image_url": "/assets/Images/pow-pow/main-screenshot.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Client C",
+    "long_description": "We were very impressed with their technical expertise and their ability to translate our ideas into a functional and engaging game. They were a pleasure to work with and we would not hesitate to recommend them.",
+    "video_url": "https://www.youtube-nocookie.com/embed/gbiCvmMTvZ8",
+    "image_url": "/assets/Images/rummy/main-screenshot.jpg"
+  }
+]

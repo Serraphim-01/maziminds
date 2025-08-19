@@ -4,6 +4,7 @@ import "@/styles/Home.css";
 import Projects from "../components/Home/ProjectCard/Projects";
 import UpcomingGames from "../components/Home/UpcomingGames/UpcomingGames";
 import OurServices from "../components/Home/OurServices/OurServices";  
+import OurClients from "../components/Home/OurClients/OurClients";
 import OurTeam from "../components/Home/OurTeam/OurTeam";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
@@ -50,9 +51,12 @@ export default function Home() {
         <OurServices />
       </div>
       <div ref={(el) => (sectionsRef.current[5] = el)} className="section">
-        <OurTeam />
+        <OurClients />
       </div>
       <div ref={(el) => (sectionsRef.current[6] = el)} className="section">
+        <OurTeam />
+      </div>
+      <div ref={(el) => (sectionsRef.current[7] = el)} className="section">
         <Footer />
       </div>
     </div>
