@@ -77,6 +77,10 @@
   border: solid 2px var(--cyan);
 }
 
+.client-icon-overlay {
+  bottom: 0;
+}
+
 .project-card h3 {
   padding: 1rem;
   color: var(--white);

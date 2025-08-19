@@ -4,7 +4,8 @@
     "title": "Client A",
     "long_description": "Working with this team was a fantastic experience. They were professional, responsive, and delivered a high-quality product that exceeded our expectations. We would definitely recommend them to anyone looking for a reliable and talented development partner.",
     "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
-    "image_url": "/assets/Images/true-destination/main-screenshot.jpg"
+    "image_url": "/assets/Images/true-destination/main-screenshot.jpg",
+    "icon_url": "/assets/Images/true-destination/icon.png"
   },
   {
     "id": 2,

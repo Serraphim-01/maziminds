@@ -106,6 +106,15 @@ export default function ClientCard({ client, externalLink, isFeatured }) {
               alt={client.title}
               className="overlay-image"
             />
+            {client.icon_url && (
+              <div className="overlay-content client-icon-overlay">
+                <img
+                  src={client.icon_url}
+                  alt="Client Icon"
+                  className="project-icon"
+                />
+              </div>
+            )}
           </div>
         )}
         {showPlayButton && (
