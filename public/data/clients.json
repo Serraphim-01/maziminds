@@ -1,24 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Client A",
-    "long_description": "Working with this team was a fantastic experience. They were professional, responsive, and delivered a high-quality product that exceeded our expectations. We would definitely recommend them to anyone looking for a reliable and talented development partner.",
-    "video_url": "https://www.youtube-nocookie.com/embed/quvXAKjJ9qM",
-    "image_url": "/assets/Images/true-destination/main-screenshot.jpg",
-    "icon_url": "/assets/Images/true-destination/icon.png"
+    "title": "Bright Antenna",
+    "long_description": "Maziminds was able to bring my game idea to life and I couldn’t be happier with the final product. They were incredibly easy to work with and I was impressed with their level of skill and professionalism. They offered lots of ideas ideas while listening to my own, and even created custom game art based off of the photos I sent. I highly recommend!",
+    "video_url": "https://www.youtube-nocookie.com/embed/DCPvCHNu3HY",
+    "image_url": "/assets/Images/clients/BA-GAME.jpg",
+    "icon_url": "/assets/Images/clients/BA-LOGO-white.jpg"
   },
   {
     "id": 2,
-    "title": "Client B",
-    "long_description": "The communication throughout the project was excellent, and they were always willing to go the extra mile to ensure we were happy with the final product. We are thrilled with the results and look forward to working with them again in the future.",
-    "video_url": "https://www.youtube-nocookie.com/embed/Lul9pRvsZeI",
-    "image_url": "/assets/Images/pow-pow/main-screenshot.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Client C",
-    "long_description": "We were very impressed with their technical expertise and their ability to translate our ideas into a functional and engaging game. They were a pleasure to work with and we would not hesitate to recommend them.",
-    "video_url": "https://www.youtube-nocookie.com/embed/gbiCvmMTvZ8",
-    "image_url": "/assets/Images/rummy/main-screenshot.jpg"
+    "title": "Raj Avinash Kumar",
+    "long_description": "It felt like working closely with a team of experienced thought leaders. The experience was seamless. The details you acquired from us early on to make sure that game became a reality, From a document to a full fledged game is no joke. You have gone in lengths to focus on all details of the requirement to ensure that we got a game we are proud of. ",
+    "video_url": "https://www.youtube-nocookie.com/embed/rIQii69emVA",
+    "image_url": "/assets/Images/clients/RULO-LOGO.png"
   }
 ]
